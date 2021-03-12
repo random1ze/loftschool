@@ -1,0 +1,155 @@
+:root {
+	--border-color: #dbdbdb;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	background-color: #e5e5e5;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+.header {
+	margin-bottom: 60px;
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 46px 0 28px;
+
+	border-bottom: 1px solid var(--border-color);
+}
+
+.download-cv {
+	font-size: 21px;
+}
+.doanload-cv__title {
+	margin-left: 9px;
+}
+.username {
+	font-size: 36px;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	font-style: normal;
+}
+.contacts__phone {
+	font-weight: 700;
+	font-size: 21px;
+}
+
+.user-info {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.user-info__left {
+	width: 500px;
+	margin-right: 45px;
+}
+.avatar {
+	border-radius: 30px;
+	overflow: hidden;
+}
+.avatar__img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.title {
+	font-size: 36px;
+	margin-bottom: 36px;
+}
+.skills__item {
+	margin-bottom: 12px;
+}
+.skills__item-title {
+	margin-bottom: 6px;
+	font-size: 24px;
+}
+.skills__inner-list {
+	font-size: 16px;
+	list-style: disc inside;
+}
+.skills__inner-title {
+	margin-bottom: 6px;
+}
+
+.history__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+.history__item {
+	width: calc(100% / 2 - (34px / 2));
+	margin-bottom: 50px;
+}
+
+.footer__container {
+	display: flex;
+	justify-content: space-between;
+	padding: 36px 0 48px;
+	border-top: 1px solid var(--border-color);
+}
+.socials {
+	display: flex;
+}
+.socials__item {
+	margin-right: 10px;
+}
+.socials__link {
+	display: flex;
+	width: 38px;
+	height: 38px;
+	background: #000;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	transition: all .2s linear;
+}
+.socials__link:hover {
+	text-decoration: none;
+	background: initial;
+	color: #000;
+}
