@@ -1,0 +1,54 @@
+.container {
+	max-width: 340px;
+}
+.header {
+	margin-bottom: 20px;
+}
+
+.header__container {
+	flex-direction: column;
+	padding: 16px 0;
+}
+
+.download-cv {
+	display: none;
+}
+.username {
+	font-size: 21px;
+}
+.contacts {
+	align-items: center;
+}
+.contacts__phone {
+	font-size: 14px;
+	text-decoration: none;
+}
+.contacts__mail {
+font-size: 14px;
+}
+
+.user-indo {
+	margin-bottom: 26px;
+}
+.user-info__left {
+	width: 110px;
+	margin-right: 18px;
+}
+.avatar {
+	border-radius: 10px;
+}
+.avatar__img {
+	width: 108px;
+	height: 118px;
+}
+
+.title {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.skills__item-title {
+	font-size: 14px;
+}
+.skills__inner-list {
+	font-size: 12px;
+}
