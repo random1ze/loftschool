@@ -116,6 +116,7 @@ ul > li {
 }
 
 .products {
+	margin-bottom: 160px;
 }
 .filter {
 	display: flex;
@@ -244,4 +245,68 @@ ul > li {
 .btn:hover {
 	background-color: var(--red);
 	color: #fff;
+}
+
+.collections {
+	margin-bottom: 135px;
+}
+
+.collections__list {
+	display: flex;
+}
+.collections__item {
+	position: relative;
+	min-height: 474px;
+	margin-right: 30px;
+	flex: 1;
+	overflow: hidden;
+	background: url('./img/bg/pattern.png') center center / 500px;
+}
+.collections__item::before {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 176%;
+	width: 60%;
+	top: -17%;
+	left: -18%;
+	background: center center / contain no-repeat;
+}
+.collections__item:last-child {
+	margin-right: 0;
+}
+.collections__item--type-guys::before {
+	background-image: url('./img/collections/collection_man.png');
+}
+.collections__item--type-girls::before {
+	top: -31%;
+	left: -25%;
+	width: 80%;
+	background-image: url('./img/collections/collection_woman.png');
+}
+.collections__link {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 74px 13% 74px 44%;
+	color: inherit;
+	font-size: 15px;
+	text-decoration: none;
+}
+.collections__link:hover .btn {
+	background: var(--red);
+	color: #fff;
+}
+.colllections__title {
+	font-family: var(--titlesFont);
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.collections__desc {
+	margin-bottom: 28px;
 }
