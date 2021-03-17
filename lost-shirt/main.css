@@ -93,15 +93,18 @@ ul > li {
 	justify-content: center;
 	flex-direction: column;
 	background: #212121;
+	transition: width .3s;
 }
 .sidebar__menu {
 	position: absolute;
 	left: -400px;
+	transition: left .3s;
 }
 .sidebar--opened .sidebar__menu {
 	left: 0;
 	width: 100%;
 	text-align: center;
+	transition-delay: .1s;
 }
 .sidebar__hamburger {
 	display: block;
