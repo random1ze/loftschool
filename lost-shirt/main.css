@@ -6,6 +6,12 @@
 	font-style: normal;
 }
 
+:root {
+	--yellow:#ffc92f;
+	--red:#d82727;
+	--black: #1b1b1b;
+	--titlesFont:'Yanone Kaffeesatz', Arial, sans-serif;
+}
 html,
 body {
 	height: 100%;
@@ -58,7 +64,7 @@ ul > li {
 .mail__content {
 	padding: 5px 10px;
 	background: #212121;
-	color: #ffbc2f;
+	color: var(--yellow);
 }
 
 .hero__content {
@@ -99,7 +105,7 @@ ul > li {
 	background: #000;
 }
 .lined-text__word--color-yellow {
-	color: #ffbc2f;
+	color: var(--yellow);
 }
 .lined-text__word:nth-child(2n) {
 	margin-left: 8px;
@@ -122,18 +128,18 @@ ul > li {
 .filter__link {
 	display: inline-block;
 	padding: 3px 21px;
-	font-family: 'Yanone Kaffeesatz',Arial, sans-serif;
+	font-family: var(--titlesFont);
 	font-size: 24px;
 	font-weight: 700;
-	color: #1b1b1b;
+	color: var(--black);
 	text-transform: uppercase;
 	text-decoration: none;
 }
 .filter__link:hover {
-	color: #d82727;
+	color:  var(--red);
 }
 
 .filter__item--active .filter__link {
-	color: #ffbc2f;
-	background-color: #1b1b1b;
+	color: var(--yellow);
+	background-color: var(--black);
 }
