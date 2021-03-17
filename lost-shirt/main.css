@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'alegreya';
+    src: url('./fonts/alegreyasanssc-black-webfont.woff2') format('woff2'),
+         url('./fonts/alegreyasanssc-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font: 16px / 1.42 'Roboto', Arial, sans-serif;
+	color: #212121;
+	-webkit-font-smoothing: antialised;
+	-moz-osx-font-font-smoothing: grayscale;
+}
+
+.hero {
+	position: relative;
+	height: 100vh;
+	min-height: 650px;
+	background: rgba(256, 196, 54, .3) url('./img/bg/hero.jpg') center center / cover no-repeat;
+}
+
+.header {
+	width: 1290px;
+	margin: 0 auto;
+	padding-top: 27px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.mail {
+	text-align: center;
+	color: inherit;
+	text-decoration: none;
+}
+.mail__title {
+	margin-bottom: 3px;
+}
+.mail__content {
+	padding: 5px 10px;
+	background: #212121;
+	color: #ffbc2f;
+}
+
+.hero__content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1140px;
+	height: 72%;
+}
+.fade-slider {
+	width: 100%;
+	height: 100%;
+}
+.fade-slider__item {
+	height: 100%;
+	background: url('./img/content/hero/slider_pic_1.png') center center / contain no-repeat;
+}
+.fade-slider__text {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-164%,-52%);
+}
+.lined-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	font-family: 'alegreya', Arial, sans-serif;
+	color: #fff;
+	font-size: 63px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.lined-text__word {
+	margin-top: -7px;
+	padding: 0 17px 8px;
+	background: #000;
+}
+.lined-text__word--color-yellow {
+	color: #ffbc2f;
+}
+.lined-text__word:nth-child(2n) {
+	margin-left: 8px;
+}
